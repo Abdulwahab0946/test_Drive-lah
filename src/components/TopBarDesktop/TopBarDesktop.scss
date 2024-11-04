@@ -1,0 +1,28 @@
+.top-bar-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00a3ad;
+    padding: 10px 20px;
+    color: #fff;
+  
+    .logo {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 20px;
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+  
+        &:hover {
+          color: #f0f0f0;
+        }
+      }
+    }
+  }
+  

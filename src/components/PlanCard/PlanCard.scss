@@ -1,0 +1,52 @@
+.plan-card {
+    width: 297px;
+    height: 176px;
+    background: rgba(0, 163, 173, 0.05);
+    border: 1px solid #00a3ad;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 1;
+  
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    &.selected {
+      border: 2px solid #00a3ad;
+      background-color: rgba(0, 163, 173, 0.1);
+    }
+  
+    .plan-title {
+      font-size: 1.2em;
+      color: #026786;
+      margin-bottom: 10px;
+    }
+  
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 15px 0;
+      color: #666;
+  
+      .feature-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+  
+        .feature-icon {
+          width: 16px;
+          height: 16px;
+          margin-right: 8px;
+        }
+      }
+    }
+  
+    .plan-price {
+      font-size: 1.3em;
+      color: #00a4cc;
+      font-weight: bold;
+    }
+  }
+  

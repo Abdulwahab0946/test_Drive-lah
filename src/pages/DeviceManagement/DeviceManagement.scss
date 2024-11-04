@@ -1,0 +1,144 @@
+.device-management {
+    padding: 20px;
+  
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #004f73;
+    }
+  
+    .device-section {
+      display: flex;
+      gap: 60px;
+      margin-bottom: 30px;
+    }
+  
+    .input-group {
+      margin-bottom: 20px;
+  
+      label {
+        display: block;
+        font-size: 1em;
+        color: #333;
+        margin-bottom: 5px;
+      }
+  
+      input {
+        width: 450px; // Set width as specified
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 1em;
+        outline: none;
+      }
+      @media (max-width: 769px) {
+        input {
+            width: 320px;
+        }
+      }
+    }
+  
+    .toggle-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+  
+      label {
+        font-size: 1em;
+        color: #333;
+      }
+  
+      .toggle-switch {
+        width: 36px;
+        height: 18px;
+        background: #00A3AD;
+        border-radius: 10px;
+        cursor: pointer;
+        opacity: 1;
+        accent-color: #00a4cc; 
+      }
+    }
+  
+    .upload-section {
+      label {
+        display: block;
+        font-size: 1em;
+        margin-bottom: 10px;
+        color: #333;
+      }
+  
+      .upload-box {
+        width: 335px;
+        height: 160px;
+        background: #FCFCFC;
+        border: 1px solid #E6E6E6;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+  
+        .upload-link {
+          color: #00a4cc;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 18px;
+    margin-top: 10px;
+  
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      border-radius: 10px;
+  
+      &:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+    }
+  
+    input:checked + .slider {
+      background-color: #00A3AD;
+    }
+  
+    input:checked + .slider:before {
+      transform: translateX(18px);
+    }
+  }
+
+
+@media (max-width: 769px) {
+    .device-section {
+      flex-direction: column;
+    }
+  }

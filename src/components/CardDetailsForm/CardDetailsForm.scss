@@ -1,0 +1,74 @@
+.card-details-section {
+    margin-top: 30px;
+  
+    h3 {
+      font-size: 1.2em;
+      color: #004f73;
+      margin-bottom: 15px;
+  
+      @media (max-width: 768px) {
+        font-size: 1em;
+      }
+    }
+  
+    .card-input-container {
+        
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      width: 480px;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+  
+      .card-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+  
+      .card-input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 1em;
+        padding: 5px;
+        flex: 1;
+  
+        &::placeholder {
+          color: #aaa;
+        }
+  
+        @media (max-width: 768px) {
+          font-size: 0.9em;
+          padding: 5px 0;
+        }
+      }
+  
+  
+      .card-expiry,
+      .card-cvc {
+        text-align: center;
+        width: 60px;
+
+  
+        @media (max-width: 768px) {
+          width: 60px;
+        }
+      }
+    }
+  
+    .note {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 10px;
+  
+      @media (max-width: 768px) {
+        font-size: 0.8em;
+      }
+    }
+  }
+  
